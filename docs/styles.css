@@ -465,6 +465,31 @@ main {
   color: var(--ink);
 }
 
+.bubble-ring {
+  padding: 3px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+.bubble-deep-dive .bubble-circle {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.bubble-deep-dive.active .bubble-ring {
+  border-color: var(--ink);
+}
+
+.deep-dive-tag {
+  display: block;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .bubble-optional .bubble-circle {
   border-style: dashed;
   border-color: #b0b0b0;

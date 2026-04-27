@@ -442,6 +442,30 @@ main {
   color: var(--ink);
 }
 
+.bubble-optional .bubble-circle {
+  border-style: dashed;
+  border-color: #b0b0b0;
+  color: #999;
+  background: var(--paper);
+}
+
+.bubble-optional.active .bubble-circle {
+  border-style: solid;
+  border-color: #888;
+  background: #666;
+  color: #fff;
+}
+
+.optional-tag {
+  display: inline-block;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #999;
+  vertical-align: middle;
+}
+
 /* Connector: line + arrowhead */
 
 .bubble-connector {
@@ -500,6 +524,58 @@ main {
   color: #444;
   line-height: 1.7;
   font-size: 0.875rem;
+}
+
+.tool-grid {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 12px;
+  background: var(--line);
+}
+
+.tool-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: baseline;
+  gap: 16px;
+  padding: 10px 14px;
+  background: var(--paper);
+}
+
+.tool-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tool-desc {
+  font-size: 0.845rem;
+  color: #555;
+  line-height: 1.55;
+}
+
+.highlight-term {
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.callout-note {
+  margin: 10px 0 0;
+  padding: 10px 14px;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 .output {

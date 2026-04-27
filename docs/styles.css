@@ -796,16 +796,79 @@ tr:last-child td {
   }
 
   .section-shell {
-    padding: 18px;
+    padding: 16px;
     border-radius: 16px;
-  }
-
-  .page-title {
-    font-size: 1.3rem;
   }
 
   .footer {
     flex-direction: column;
     gap: 6px;
+  }
+
+  /* Hero */
+  .working-title {
+    font-size: 0.9rem;
+  }
+
+  /* Tool grid: stack name above desc */
+  .tool-row {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .tool-name {
+    font-size: 0.75rem;
+  }
+
+  /* Bubbles: shrink so pipeline scrolls cleanly */
+  .bubble-circle {
+    width: 38px;
+    height: 38px;
+    font-size: 0.78rem;
+  }
+
+  .bubble-step {
+    min-width: 56px;
+  }
+
+  .bubble-label {
+    font-size: 0.6rem;
+  }
+
+  .bubble-connector {
+    margin-top: 18px;
+    width: 24px;
+  }
+
+  /* Panel */
+  .panel-header h3 {
+    font-size: 0.92rem;
+  }
+
+  .flow-panel {
+    padding: 16px;
+  }
+
+  /* Funny quote */
+  .funny-quote {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  /* Flow strip: tighter */
+  .flow-pill {
+    font-size: 0.7rem;
+    padding: 4px 9px;
+  }
+
+  /* Reference card */
+  .reference-card {
+    padding: 14px;
+  }
+
+  /* Table: ensure it scrolls */
+  .table-wrap {
+    -webkit-overflow-scrolling: touch;
   }
 }

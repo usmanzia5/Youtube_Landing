@@ -336,6 +336,29 @@ main {
   font-size: 0.845rem;
 }
 
+.funny-quote {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 12px 16px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-md);
+  background: var(--paper);
+}
+
+.funny-emoji {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.funny-quote p {
+  margin: 0;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
 .flow-strip {
   display: flex;
   flex-wrap: wrap;

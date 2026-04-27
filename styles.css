@@ -147,11 +147,10 @@ main {
 .hero h1 {
   max-width: 780px;
   margin: 12px 0 20px;
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(4rem, 10vw, 8.7rem);
-  font-weight: 400;
+  font-size: clamp(3.2rem, 7vw, 6.6rem);
+  font-weight: 800;
   letter-spacing: -0.075em;
-  line-height: 0.82;
+  line-height: 0.9;
 }
 
 .hero-copy {
@@ -225,11 +224,10 @@ main {
 
 .jump-map h2 {
   margin: 8px 0 0;
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(2.3rem, 4vw, 4rem);
-  font-weight: 400;
-  letter-spacing: -0.055em;
-  line-height: 0.94;
+  font-size: clamp(1.85rem, 3.6vw, 3.3rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
 }
 
 .jump-links {
@@ -271,11 +269,10 @@ main {
 .intro-panel h2,
 .section-heading h2 {
   margin: 8px 0 0;
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(2.5rem, 5vw, 5.2rem);
-  font-weight: 400;
-  letter-spacing: -0.055em;
-  line-height: 0.9;
+  font-size: clamp(2.1rem, 4.2vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
 }
 
 .split-copy {
@@ -325,11 +322,10 @@ main {
 .reference-main h3 {
   max-width: 850px;
   margin: 0;
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(2rem, 4vw, 4rem);
-  font-weight: 400;
-  letter-spacing: -0.06em;
-  line-height: 0.96;
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.04;
 }
 
 .reference-main p {
@@ -522,10 +518,10 @@ main {
 .quote-card p {
   margin: 0;
   color: var(--accent-ink);
-  font-family: "Instrument Serif", serif;
-  font-size: 2rem;
-  letter-spacing: -0.05em;
-  line-height: 0.95;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
 }
 
 .quote-card span {
@@ -657,10 +653,10 @@ main {
 .callout p:last-child {
   max-width: 860px;
   margin: 8px 0 0;
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(1.9rem, 4vw, 3.6rem);
+  font-size: clamp(1.55rem, 3.3vw, 3rem);
+  font-weight: 800;
   letter-spacing: -0.06em;
-  line-height: 0.95;
+  line-height: 1.02;
 }
 
 .table-wrap {
@@ -826,10 +822,10 @@ tr:last-child td {
 .final-message p:last-child {
   max-width: 940px;
   margin: 10px 0 0;
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(2rem, 4.4vw, 4.4rem);
+  font-size: clamp(1.65rem, 3.6vw, 3.4rem);
+  font-weight: 800;
   letter-spacing: -0.065em;
-  line-height: 0.95;
+  line-height: 1.02;
 }
 
 @media (max-width: 860px) {
@@ -947,20 +943,21 @@ tr:last-child td {
   }
 
   .hero h1 {
-    font-size: clamp(2.95rem, 13.5vw, 3.7rem);
-    letter-spacing: -0.06em;
-    line-height: 0.9;
+    font-size: clamp(2.45rem, 11vw, 3.2rem);
+    letter-spacing: -0.065em;
+    line-height: 0.98;
     text-wrap: balance;
   }
 
+  .jump-map h2,
   .intro-panel h2,
   .section-heading h2,
   .reference-main h3,
   .callout p:last-child,
   .final-message p:last-child {
-    font-size: clamp(2.05rem, 10.8vw, 3rem);
+    font-size: clamp(1.72rem, 8.5vw, 2.45rem);
     letter-spacing: -0.055em;
-    line-height: 0.96;
+    line-height: 1.04;
     text-wrap: balance;
   }
 

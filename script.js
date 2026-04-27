@@ -1,7 +1,7 @@
-const accordion = document.querySelector("[data-accordion]");
 const siteHeader = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const primaryNav = document.querySelector("#primary-nav");
+const flowTabs = document.querySelector("[data-flow-tabs]");
 
 if (siteHeader && menuToggle && primaryNav) {
   menuToggle.addEventListener("click", () => {
@@ -19,25 +19,29 @@ if (siteHeader && menuToggle && primaryNav) {
   });
 }
 
-if (accordion) {
-  accordion.addEventListener("click", (event) => {
-    const trigger = event.target.closest(".accordion-trigger");
+if (flowTabs) {
+  const tabs = [...flowTabs.querySelectorAll("[data-flow-tab]")];
+  const panels = [...flowTabs.querySelectorAll(".flow-panel")];
 
-    if (!trigger) {
+  flowTabs.addEventListener("click", (event) => {
+    const tab = event.target.closest("[data-flow-tab]");
+
+    if (!tab) {
       return;
     }
 
-    const item = trigger.closest(".accordion-item");
-    const isOpen = item.classList.contains("open");
+    const targetId = tab.dataset.flowTab;
 
-    accordion.querySelectorAll(".accordion-item").forEach((entry) => {
-      entry.classList.remove("open");
-      entry.querySelector(".accordion-trigger").setAttribute("aria-expanded", "false");
+    tabs.forEach((entry) => {
+      const isActive = entry === tab;
+      entry.classList.toggle("active", isActive);
+      entry.setAttribute("aria-selected", String(isActive));
     });
 
-    if (!isOpen) {
-      item.classList.add("open");
-      trigger.setAttribute("aria-expanded", "true");
-    }
+    panels.forEach((panel) => {
+      const isActive = panel.id === targetId;
+      panel.classList.toggle("active", isActive);
+      panel.hidden = !isActive;
+    });
   });
 }

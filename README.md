@@ -1,6 +1,6 @@
-# YouTube Landing Proposal
+# YouTube Creative
 
-A static GitHub Pages proposal page for an AI tools video concept built around creating `CookUp`, a home-chef meal ordering company, live on camera.
+A static GitHub Pages creative brief for an AI tools YouTube video concept built around creating `CookUp`, a home-chef meal ordering company, live on camera.
 
 ## Local Preview
 
@@ -8,5 +8,6 @@ Open `index.html` in a browser, or serve the directory with any static file serv
 
 ## GitHub Pages
 
-The site deploys from the repository root using the GitHub Pages workflow in
-`.github/workflows/pages.yml`.
+Deploy from GitHub Settings -> Pages using the repository root on the `main`
+branch, or the root of the `gh-pages` branch if you prefer the existing Pages
+branch.

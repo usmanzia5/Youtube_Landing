@@ -8,4 +8,5 @@ Open `index.html` in a browser, or serve the directory with any static file serv
 
 ## GitHub Pages
 
-Set GitHub Pages to deploy from the repository root on the default branch.
+The site deploys from the repository root using the GitHub Pages workflow in
+`.github/workflows/pages.yml`.
